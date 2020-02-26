@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Crystals Collector</title>
+        <!-- Link to Bootstrap stylesheet-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Link to style.css-->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">  
+        <link rel="reset stylesheet" type="text/css" href="assets/css/reset.css"> 
+        <!-- Link to javascript-->
+        <link rel="javascript" type="text/js" href="assets/javascript/game.js"> 
+
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1 id="name">Crystals Collector!</h1>
+            </div>  
+        </header>
+            <br>
+
+        <!--Instructions-->
+        <div class="content">
+            <section>   
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to a random number; you lose the game if your total score goes above the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time the game starts, it will change the values of each crystal.</p>
+            </section>   
+        </div>
+
+        <br>
+
+        <!--Wins/Losses tracker-->
+        <div class="winslosses">
+            <br>
+            <h7>Wins:</h7>
+                <div id="wins"></div>
+            <hr>
+            <h7>Losses:</h7>
+                <div id="losses"></div>
+            <br>    
+        </div>
+
+        <br>
+
+        <!--Given random number-->
+        <div class="randomnumber">
+            <br>
+            <h7>Your random number is:</h7>
+        </div>
+
+        <br>
+
+        <!--Crystals-->
+        <div class="crystals">
+            <h7>Choose a crystal wisely...</h7>
+        </div>
+
+        <br>
+
+        <!--Score section-->
+        <div class="score">
+            <h7>Your total score is:</h7>
+        </div>
+
+        <br>
+
+        <!--Footer-->
+            <div>
+                    <footer class="backfooter"></footer>
+                    <footer class="footer">
+                        <div class="footercontainer">
+                            <br>
+                            <br>
+                            <br>
+                            <p class="copywright">Copywright ©</p>
+                        </div>
+                    </footer>    
+            </div>            
+    </body>
+</html>
