@@ -6,11 +6,12 @@
         <!-- Link to Bootstrap stylesheet-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Link to jQuery Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- Link to style.css-->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">  
         <link rel="reset stylesheet" type="text/css" href="assets/css/reset.css"> 
-        <!-- Link to javascript-->
-        <link rel="javascript" type="text/js" href="assets/javascript/game.js"> 
+
 
     </head>
     <body>
@@ -37,10 +38,10 @@
         <!--Wins/Losses tracker-->
         <div class="winslosses">
             <br>
-            <h7>Wins:</h7>
+            <h6>Wins:</h6>
                 <div id="wins"></div>
             <hr>
-            <h7>Losses:</h7>
+            <h6>Losses:</h6>
                 <div id="losses"></div>
             <br>    
         </div>
@@ -48,23 +49,54 @@
         <br>
 
         <!--Given random number-->
-        <div class="randomnumber">
+        <div class="chosenNumber">
             <br>
             <h7>Your random number is:</h7>
+                <div id="randomNumber"></div>
         </div>
 
         <br>
 
         <!--Crystals-->
-        <div class="crystals">
-            <h7>Choose a crystal wisely...</h7>
+        <div class="crystalOptions">
+                <h7>Choose a crystal wisely...</h7>
+                <br>
+                <!-- <div class="col-md-3"> -->
+                    <input id="button-ruby" class="crystals" type="image" src="assets/images/redcrystal.jpg" value="red">
+                    <input id="button-sapphire" class="crystals" type="image" src="assets/images/bluecrystal.jpg" value="blue">
+                    <input id="button-goldenOnyx" class="crystals" type="image" src="assets/images/yellowcrystal.jpg" value="yellow">
+                    <input id="button-emerald" class="crystals" type="image" src="assets/images/greencrystal.jpg" value="green">
+                    
+                    <!-- <button id="button-blue" class="crystals" href="assets/images/bluecrystal.jpg" value="blue"><span> </span></button>
+                    <button id="button-yellow" class="crystals" href="assets/images/greencrystal.jpg" value="yellow"><span> </span></button>
+                    <button id="button-green" class="crystals" href="assets/images/yellowcrystal.jpg" value="green"><span> </span></button> -->
+                <!-- </div> -->
+                <!-- or
+                    <input class="crystals" type="image" src="assets/images/redcrystal.jpg" value="red">
+                    <div id="button-ruby"></div>
+
+                <input class="crystals" type="image" src="assets/images/bluecrystal.jpg" value="blue">
+                    <div id="button-sapphire"></div>
+
+                <input class="crystals" type="image" src="assets/images/yellowcrystal.jpg" value="yellow">
+                    <div id="button-goldenOnyx"></div>
+                    
+                <input class="crystals" type="image" src="assets/images/greencrystal.jpg" value="green">
+                    <div id="button-emerald"></div>        -->
+
+
+
+
+
+
         </div>
 
         <br>
 
         <!--Score section-->
-        <div class="score">
+        <div class="totalscore">
             <h7>Your total score is:</h7>
+                <div id="scoreFinal"></div>
         </div>
 
         <br>
@@ -80,6 +112,8 @@
                             <p class="copywright">Copywright ©</p>
                         </div>
                     </footer>    
-            </div>            
+            </div> 
+        <!-- Link to javascript-->
+        <script src="assets/javascript/game.js"></script>            
     </body>
 </html>
